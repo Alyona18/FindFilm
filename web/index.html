@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"" rel="stylesheet" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Design1.css">
+</head>
+<body>
+<header>
+<div id="logo"></div>
+	<nav>
+		<ul>
+			<li><a href="#"><h1>Go!</h1></a></li>
+			<li><a href="#">support</a></li>
+			<li><a href="#">log in</a></li>
+			<li><a href="#">Sign in</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="space"> </div>
+<section>
+   <article class="proporties">
+      <p>Genre </p>
+	  <select name="select">
+	  <optgroup label="Genre">
+	    <option value="s1">Drama</option>  
+	    <option value="s2">Horror</option>  
+		<option value="s3">Crime</option>  
+		<option value="s4">History</option>  
+		<option value="s5">Sci-fi</option>  
+		<option value="s6">Comedy</option>  
+	    <option value="s7">Romance</option>  
+		<option value="s8">Action</option>  
+      </optgroup>		
+	  </select>
+	  <p>Year </p>
+      <select id="year" >
+        <script>
+		for (let year = 1920; year <= 2020; year++) {
+            let options = document.createElement("OPTION");
+            document.getElementById("year").appendChild(options).innerHTML = year;
+        }		
+		</script>	  
+	  </select>
+   </article>
+   <article class="movie">
+      <div class="film">	
+        <img id="poster" src="https://avatanplus.com/files/resources/original/5c6441ceefeaf168e7a11087.png" alt="error, try again">
+		<ul>
+		    <li><p id="name">Name</p></li>
+			<li> Genre: <p id="genre">genre</p></li>
+		    <li> Year: <p id="year">year</p></li>		
+		</ul>
+		<ul>
+	    <li><img id="nextFilm" src="https://www.onlygfx.com/wp-content/uploads/2018/09/7-comic-arrow-7.png" alt="Next">
+        </ul>
+	  </div>
+   </article>
+</section>	
+ <script src="C:\Users\admin\Desktop\3 курс\web\parser.js" > </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body {
+  background: #4169E1;	
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  height: 30%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  background: #66f;
+}
+
+div.space{
+  display: flex;
+  position:relative;
+  padding:20px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  height: 100%
+  flex-wrap: wrap;
+  background: #66f;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  flex: 1;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+article.movie{
+  flex-direction: column;
+  
+}
+
+article.proporties{
+   background: #66f6;
+   box-shadow: 0 5px 15px rgba(0,0,0,.2);
+   align-items: center;
+   float: center;
+   margin: 10px;
+}
+
+article.proporties p{
+  font-family:  'Poppins', sans-serif; 
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bolt;
+  font-size: 80%;
+  margin: 10px;
+}
+
+.film{
+  width:100%;
+  
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+  transition: .5s;
+}
+
+ul li a{
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bolt;
+}
+
+select{
+  border: none;
+  border-radius: 4px;
+  background-color: #FFD700;
+  height: 80%;
+}
+
+select:hover{
+  color: #66F;
+  transition: .5s; 
+}
+
+ul li a:hover{
+  color: #FFFF00;
+  transition: .5s;  
+}
+
+nav{
+	float: right;
+	width: 100%;
+}
+
+ul li a h1{
+	text-shadow: 4px 0 2px rgba(0,0,0,.2);
+}
+
+#poster{
+  position:relative;
+  display:flex;
+  width: 50%;
+  height: 70%;
+  box-shadow: 0 5px 15px rgba(1, 1, 1,.2);
+}
+
+#nextFilm{
+  position:relative;
+  display:flex;
+  width: 80%;
+  height: 90%;
+}
+
+#nextFilm:hover{
+  transition: .5s;
+  box-shadow: 0 5px 15px rgba(242,212,17,.2);
+}
+
+section ul{
+  width:40%;
+  list-style-type: none;
+  display: block;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+
+section ul li{
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bolt;
+}
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; 
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media screen and (max-width:400px) {
+  header {
+    display:flex;
+	align-items: flex-start;
+	height: 65%;
+  }
+  nav ul {
+    display: block;
+  }
+}
